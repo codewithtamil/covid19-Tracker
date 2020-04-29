@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Covid19 Tracker</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e2169f0192.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body onload=initFetch()>
+    <div class="container">
+      <h2>Covid19 Statistics App</h2>
+      <div id="form">
+        <div class="form-group">
+          <label for="sel2">Select the Country : </label>
+          <select class="form-control" id="select">
+            <option value="Global">Global</option>
+            <option value="India">India</option>
+            <option value="Australia">Australia</option>
+            <option value="Thailand">Thailand</option>
+            <option value="China">China</option>
+            <option value="Pakistan">Pakistan</option>
+          </select>
+          <button type="submit" id='submit' class="btn btn-primary">View Statistics</button>
+
+          <h1 id="stat">Global</h1>
+
+          <div class="report">
+            <div class="data">
+              <i class="fas fa-smile-beam recovered"></i>
+              New Recovered
+              <span class="data-value" id="N-rec">0</span>
+            </div>
+            <div class="data">
+              <i class="fas fa-smile-beam recovered"></i>
+              Total Recovered
+              <span class="data-value" id="T-rec">0</span>
+            </div>
+
+            <div class="data">
+              <i class="fas fa-notes-medical text-success"></i>
+              New Confirmed Case
+              <span class="data-value" id="N-conf">0</span>
+            </div>
+            <div class="data">
+              <i class="fas fa-notes-medical text-success"></i>
+              Total Confirmed Case
+              <span class="data-value" id="T-conf">0</span>
+            </div>
+
+            <div class="data">
+              <i class="fas fa-sad-tear deaths"></i>
+              New Death
+              <span class="data-value" id="N-death">0</span>
+            </div>
+            <div class="data">
+              <i class="fas fa-sad-cry deaths"></i>
+              Total Deaths
+              <span class="data-value" id="T-death">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

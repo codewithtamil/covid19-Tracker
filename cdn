@@ -1,0 +1,15 @@
+    Bootstrap Cheetsheet CDN
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    Jquery CDN 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    Bootstrap CDN
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    Font Awesome CDN
+    <script
+      src="https://kit.fontawesome.com/e2169f0192.js"
+      crossorigin="anonymous"
+    ></script>
